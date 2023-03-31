@@ -1,0 +1,108 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  height: 140px;
+
+  @media (max-width: 1080px) {
+    height: 70px;
+  }
+
+  &.active {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(214, 210, 210);
+
+    @media (max-width: 1080px) {
+      display: block;
+      padding: 10px;
+      border: none;
+    }
+
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+
+      @media (max-width: 1080px) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        span {
+          font-size: 1.1rem;
+
+          @media (max-width: 1080px) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+
+      @media (max-width: 1080px) {
+        display: none;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        span {
+          font-size: 1.1rem;
+        }
+
+        button {
+          padding: 7px 30px;
+          border: 1px solid black;
+          border-radius: 5px;
+          font-size: 1.1rem;
+          background: #fff;
+        }
+      }
+    }
+  }
+  .botton-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(214, 210, 210);
+    padding: 20px 0;
+    background-color: white;
+
+    @media (max-width: 1080px) {
+      display: none;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      gap: 90px;
+
+      span {
+        font-size: 1rem;
+        color: rgb(161, 160, 157);
+      }
+    }
+  }
+}

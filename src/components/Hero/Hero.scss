@@ -1,0 +1,117 @@
+.hero-section {
+  margin-top: 200px;
+  padding: 10px 0;
+  overflow-x: hidden;
+  padding: 20px;
+
+  @media (max-width: 980px) {
+    margin-top: 100px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .top {
+      h1 {
+        font-size: 6rem;
+        text-align: center;
+        font-weight: 800;
+        margin-bottom: 10px;
+
+        @media (max-width: 980px) {
+          font-size: 4rem;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        text-align: center;
+
+        @media (max-width: 980px) {
+          font-size: 1rem;
+        }
+      }
+      .search {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        input {
+          width: 100%;
+          padding: 20px;
+          border-radius: 5px;
+          border: 1px solid rgb(189, 184, 184);
+
+          &::placeholder {
+            color: gray;
+            font-size: 0.9rem;
+          }
+        }
+        button {
+          padding: 20px 40px;
+          border: 1px solid black;
+          background-color: #eafa45;
+          color: black;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+    .trending-jobs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      gap: 10px;
+
+      @media (max-width: 680px) {
+        flex-wrap: wrap;
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      .trending-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        span {
+          font-size: 0.8rem;
+          border: 1px solid black;
+          border-radius: 20px;
+          padding: 5px 20px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .bottom-logo-slider {
+      margin-top: 50px;
+      transition: all 1s ease-in-out;
+
+      .slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+        animation: drift 20s linear infinite both;
+
+        @keyframes drift {
+          from {
+            transform: translateX(-600px);
+          }
+          to {
+            transform: translateX(600px);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.browse {
+  padding: 20px;
+  margin-top: 50px;
+
+  .wrapper {
+    h2 {
+      font-size: 3rem;
+      @media (max-width: 720px) {
+        font-size: 2rem;
+      }
+    }
+
+    .job {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+
+      span {
+        font-size: 1.2rem;
+        padding: 6px 14px;
+        cursor: pointer;
+        border: 1px solid rgb(185, 178, 178);
+        transition: all 200ms ease;
+
+        @media (max-width: 720px) {
+          font-size: 1rem;
+        }
+
+        &:hover {
+          background-color: #eafa45;
+          scale: 1.2;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+            rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+      }
+    }
+  }
+}
